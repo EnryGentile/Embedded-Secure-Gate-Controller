@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Release Notes for Contiki STM32 Library Middleware</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" href="_htmresc/mini-st_2020.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <link rel="icon" type="image/x-icon" href="_htmresc/favicon.png" />
+</head>
+<body>
+<div class="row">
+<div class="col-sm-12 col-lg-4">
+<center>
+<h1 id="release-notes-for-contiki-stm32-library-middleware">Release Notes for <mark>Contiki STM32 Library Middleware</mark></h1>
+<p>Copyright © <span style="background-color: yellow;">2021</span> STMicroelectronics<br />
+</p>
+<a href="https://www.st.com" class="logo"><img src="_htmresc/st_logo_2020.png" alt="ST logo" /></a>
+</center>
+<h1 id="license">License</h1>
+<p>This software package is licensed by ST under SLA0055, the “License”; You may not use this component except in compliance with the License. You may obtain a copy of the License at:</p>
+<p><a href="http://www.st.com/SLA0055"><span style="background-color: yellow;">SLA0055: SOFTWARE LICENSE AGREEMENT</span></a></p>
+<h1 id="purpose">Purpose</h1>
+<p>Contiki STM32 Library is a middleware for the the X-CUBE-SUBG2 expansion software. This middleware provides the ST platform specific implementation for Contiki6LP Middleware.</p>
+<p>Contiki_STM32_Library software features:</p>
+<ul>
+<li>Binding to support STM F4, L4 and L1 in Contiki6LP middleware.</li>
+<li>Binding to support SPIRIT1 and S2LP SubGHz radios in Contiki6LP middleware.</li>
+</ul>
+</div>
+<div class="col-sm-12 col-lg-8">
+<h1 id="update-history">Update History</h1>
+<div class="collapse">
+<input type="checkbox" id="collapse-section4" checked aria-hidden="true"> <label for="collapse-section1" aria-hidden="true"><strong>1.3.0 / April 19th 2021</strong></label>
+<div>
+<h2 id="main-changes">Main Changes</h2>
+<h3 id="product-update">Product update</h3>
+<ul>
+<li>Changed radio_arch_refresh_status() implementation</li>
+<li>Several fixes to radio_driver</li>
+</ul>
+<h2 id="contents">Contents</h2>
+<ul>
+<li>Contiki target files for ST platform, modified to fit STM32Cube environment.</li>
+</ul>
+<h2 id="development-toolchains-and-compilers">Development Toolchains and Compilers</h2>
+<ul>
+<li>IAR Embedded Workbench for ARM (EWARM) toolchain v8.50.9 + ST-LINK</li>
+<li>Keil Microcontroller Development Kit (MDK-ARM) toolchain v5.32 + ST-LINK</li>
+<li>STM32CubeIDE toolchain v1.6.1 + ST-LINK</li>
+</ul>
+<h2 id="supported-devices-and-eval-boards">Supported Devices and EVAL boards</h2>
+<ul>
+<li>STM32F401RE and STM32L152RE devices</li>
+<li>NUCLEO-F401RE Board RevC</li>
+<li>NUCLEO-L152RE Board RevC</li>
+<li>X-NUCLEO-IDS01A4 Board</li>
+<li>X-NUCLEO-IDS01A5 Board</li>
+<li>X-NUCLEO-S2868A1 Board</li>
+<li>X-NUCLEO-S2915A1 Board</li>
+</ul>
+</div>
+</div>
+<div class="collapse">
+<input type="checkbox" id="collapse-section4" checked aria-hidden="true"> <label for="collapse-section1" aria-hidden="true"><strong>1.2.0 / December 16th 2019</strong></label>
+<div>
+<h2 id="main-changes-1">Main Changes</h2>
+<h3 id="product-update-1">Product update</h3>
+<ul>
+<li>Added support for X-NUCLEO-S2915A1</li>
+<li>New expansion board X-NUCLEO-S2868A2 is automatically supported because pin to pin compatibile with X-NUCLEO-S2868A1</li>
+</ul>
+<h2 id="contents-1">Contents</h2>
+<ul>
+<li>Contiki target files for ST platform, modified to fit STM32Cube environment.</li>
+</ul>
+<h2 id="development-toolchains-and-compilers-1">Development Toolchains and Compilers</h2>
+<ul>
+<li>IAR Embedded Workbench for ARM (EWARM) toolchain v8.20.2 + ST-LINK</li>
+<li>Keil Microcontroller Development Kit (MDK-ARM) toolchain v5.24.2 + ST-LINK</li>
+<li>System Workbench for STM32 (SW4STM32) toolchain v1.16.0 (IDE 2.5.0) + ST-LINK</li>
+</ul>
+<h2 id="supported-devices-and-eval-boards-1">Supported Devices and EVAL boards</h2>
+<ul>
+<li>STM32F401RE and STM32L152RE devices</li>
+<li>NUCLEO-F401RE Board RevC</li>
+<li>NUCLEO-L152RE Board RevC</li>
+<li>X-NUCLEO-IDS01A4 Board</li>
+<li>X-NUCLEO-IDS01A5 Board</li>
+<li>X-NUCLEO-S2868A1 Board</li>
+<li>X-NUCLEO-S2915A1 Board</li>
+</ul>
+</div>
+</div>
+<div class="collapse">
+<input type="checkbox" id="collapse-section4" checked aria-hidden="true"> <label for="collapse-section1" aria-hidden="true"><strong>1.1.1 / June 1st 2019</strong></label>
+<div>
+<h2 id="main-changes-2">Main Changes</h2>
+<h3 id="product-update-2">Product update</h3>
+<ul>
+<li>Fixed radio driver that caused a problem to Border Router for NUCLEO-F401RE platform</li>
+<li>Changed TIM implementation for rtimer-arch.</li>
+</ul>
+<h2 id="contents-2">Contents</h2>
+<ul>
+<li>Contiki target files for ST platform, modified to fit STM32Cube environment.</li>
+</ul>
+<h2 id="development-toolchains-and-compilers-2">Development Toolchains and Compilers</h2>
+<ul>
+<li>IAR Embedded Workbench for ARM (EWARM) toolchain v8.20.2 + ST-LINK</li>
+<li>Keil Microcontroller Development Kit (MDK-ARM) toolchain v5.24.2 + ST-LINK</li>
+<li>System Workbench for STM32 (SW4STM32) toolchain v1.16.0 (IDE 2.5.0) + ST-LINK</li>
+</ul>
+<h2 id="supported-devices-and-eval-boards-2">Supported Devices and EVAL boards</h2>
+<ul>
+<li>STM32F401RE and STM32L152RE devices</li>
+<li>NUCLEO-F401RE Board RevC</li>
+<li>NUCLEO-L152RE Board RevC</li>
+<li>X-NUCLEO-IDS01A4 Board</li>
+<li>X-NUCLEO-IDS01A5 Board</li>
+<li>X-NUCLEO-S2868A1 Board</li>
+<li>X-NUCLEO-S2915A1 Board</li>
+</ul>
+</div>
+</div>
+<div class="collapse">
+<input type="checkbox" id="collapse-section4" checked aria-hidden="true"> <label for="collapse-section1" aria-hidden="true"><strong>1.1.0 / December 10th 2018</strong></label>
+<div>
+<h2 id="main-changes-3">Main Changes</h2>
+<h3 id="product-update-3">Product update</h3>
+<ul>
+<li>Added Low Power support for S2-LP radio (SNIFF Mode and, still experimental ContikiMAC)</li>
+<li>Refactoring/renaming of some files</li>
+</ul>
+<h2 id="contents-3">Contents</h2>
+<ul>
+<li>Contiki target files for ST platform, modified to fit STM32Cube environment.</li>
+</ul>
+<h2 id="development-toolchains-and-compilers-3">Development Toolchains and Compilers</h2>
+<ul>
+<li>IAR Embedded Workbench for ARM (EWARM) toolchain v8.20.2 + ST-LINK</li>
+<li>Keil Microcontroller Development Kit (MDK-ARM) toolchain v5.24.2 + ST-LINK</li>
+<li>System Workbench for STM32 (SW4STM32) toolchain v1.16.0 (IDE 2.5.0) + ST-LINK</li>
+</ul>
+<h2 id="supported-devices-and-eval-boards-3">Supported Devices and EVAL boards</h2>
+<ul>
+<li>STM32F401RE and STM32L152RE devices</li>
+<li>NUCLEO-F401RE Board RevC</li>
+<li>NUCLEO-L152RE Board RevC</li>
+<li>X-NUCLEO-IDS01A4 Board</li>
+<li>X-NUCLEO-IDS01A5 Board</li>
+<li>X-NUCLEO-S2868A1 Board</li>
+<li>X-NUCLEO-S2915A1 Board</li>
+</ul>
+</div>
+</div>
+<div class="collapse">
+<input type="checkbox" id="collapse-section4" checked aria-hidden="true"> <label for="collapse-section1" aria-hidden="true"><strong>1.0.0 / August 10th 2018</strong></label>
+<div>
+<h2 id="main-changes-4">Main Changes</h2>
+<h3 id="product-update-4">Product update</h3>
+<ul>
+<li>First release</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<footer class="sticky">
+<div class="columns">
+<div class="column" style="width:95%;">
+
+</div><div class="column" style="width:5%;">
+
+</div>
+</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Release Notes for X-CUBE-SUBG1 Package</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" href="_htmresc/mini-st_2020.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <link rel="icon" type="image/x-icon" href="_htmresc/favicon.png" />
+</head>
+<body>
+<div class="row">
+<div class="col-sm-12 col-lg-4">
+<center>
+<h1 id="release-notes-for-x-cube-subg1">Release Notes for <mark>X-CUBE-SUBG1</mark></h1>
+<p>Copyright © <span style="background-color: yellow;">2021</span> STMicroelectronics<br />
+</p>
+<a href="https://www.st.com" class="logo"><img src="_htmresc/st_logo_2020.png" alt="ST logo" /></a>
+</center>
+<h1 id="license">License</h1>
+<p>This software package is licensed by ST under SLA0077, the “License”; You may not use this component except in compliance with the License. You may obtain a copy of the License at:</p>
+<p><a href="http://www.st.com/content/st_com/en/search.html#q=SLA0077-t=keywords-page=1"><span style="background-color: yellow;">SLA0077: SOFTWARE LICENSE AGREEMENT</span></a></p>
+<h1 id="purpose">Purpose</h1>
+<p>The X-CUBE-SUBG1 software package is an expansion for STM32Cube. This software provides drivers running on STM32 for STM’s Radio (SPIRIT1 or S2-LP) Low data rate and low power sub-1GHz transceiver devices. It is built on top of STM32Cube software technology that ease portability across different STM32 micro-controllers. This expansion firmware is built over the X-NUCLEO-S2868A1 (or X-NUCLEO-S2868A2), X-NUCLEO-S2915A1, X-NUCLEO-IDS01A4 and X-NUCLEO-IDS01A5 demonstration kit. This expansion board can be plugged on the Arduino UNO R3 connectors of any STM32 Nucleo board. The user can mount the ST Morpho connectors if required. The different expansion boards can be easily stacked in order to evaluate different devices with Sub 1GHz communication</p>
+<p><strong>X-CUBE-SUBG1 software features</strong>:</p>
+<ul>
+<li>Point-to-Point (P2P) communication example to transfer data from one node to another</li>
+<li>Middleware to build applications for wM-Bus (wireless metering bus)</li>
+<li>Contiki 6LoWPAN Middleware to build applications for Wireless Sensor Nodes using Mesh Network</li>
+<li>Low Power features are available in Udp_sender and Udp_receiver applications for MCU (NUCLEO-L152RE) and Radio (X-NUCLEO-S2868A1)</li>
+<li>Easy portability across different MCU families thanks to STM32Cube</li>
+<li>Free user-friendly license terms</li>
+<li>Examples implementations available on the X-NUCLEO-S2868A1/X-NUCLEO-S2868A2 (868 Mhz), X-NUCLEO-S2915A1 (915 Mhz), X-NUCLEO-IDS01A4 (868 MHz) or X-NUCLEO-IDS01A5 (915 MHz) STM32 expansion board plugged on top of one NUCLEO-F401RE or NUCLEO-L152RE or NUCLEO-L053R8</li>
+</ul>
+<p><a href=""><img src="_htmresc/X_CUBE_SUBG1.png" alt="The X-CUBE-SUBG1 package contents" /></a></p>
+<p>Here is the list of references to user documents:</p>
+<ul>
+<li>STM32Cube: <a href="http://www.st.com/stm32cube">www.st.com/stm32cube</a></li>
+<li>STM32 Nucleo boards: <a href="http://www.st.com/stm32nucleo">www.st.com/stm32nucleo</a></li>
+<li>STM32 Nucleo expansion boards: <a href="http://www.st.com/x-nucleo">www.st.com/x-nucleo</a></li>
+<li><a href="https://www.st.com/resource/en/user_manual/dm00189294-getting-started-with-xcubesubg1-sub1-ghz-rf-software-expansion-for-stm32cube-stmicroelectronics.pdf">UM1904: Getting started with X-CUBE-SUBG1, Sub-1 GHz RF software expansion for STM32Cube</a></li>
+<li><a href="https://www.st.com/resource/en/user_manual/dm00181126-getting-started-with-the-xcubesubg1-for-wmbus-communications-based-on-sub1-ghz-rf-expansion-board-stmicroelectronics.pdf">UM1892: Getting started with the X-CUBE-SUBG1 for wM-Bus communications based on Sub-1 GHz RF expansion board</a></li>
+<li><a href="https://www.st.com/resource/en/user_manual/dm00279190-getting-started-with-contiki6lp-contiki-os-and-6lowpan-sub1-ghz-rf-in-xcubesubg1-expansion-for-stm32cube-stmicroelectronics.pdf">UM2040: Getting started with Contiki6LP, Contiki OS and 6LoWPAN sub-1 GHz RF software expansion for STM32Cube</a></li>
+</ul>
+</div>
+<div class="col-sm-12 col-lg-8">
+<h1 id="update-history">Update History</h1>
+<div class="collapse">
+<input type="checkbox" id="collapse-section4" checked aria-hidden="true"> <label for="collapse-section1" aria-hidden="true"><strong>3.3.0 / April 19th 2021</strong></label>
+<div>
+<h2 id="main-changes">Main Changes</h2>
+<h3 id="product-update">Product update</h3>
+<ul>
+<li>Added examples of wM-Bus in the workspace</li>
+<li>Bug Fixes in the wM-Bus stack</li>
+<li>Source files are added in the workspace for wM-Bus on S2LP</li>
+<li>Bugfixes for 6LoWPAN solution</li>
+<li>Bug Fixes in Radio BSPs and Components</li>
+<li>New projects structure</li>
+<li>Added support of STM32CubeIDE</li>
+</ul>
+<h2 id="contents">Contents</h2>
+<p><small>The components flagged by “<span class="icon-st-update"></span>” have changed since the previous release. “<span class="icon-st-add"></span>” are new.</small></p>
+<p>Drivers</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Version</th>
+<th style="text-align: left;">License</th>
+<th style="text-align: left;">Release note</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>X-NUCLEO-S2868A1</strong></td>
+<td style="text-align: left;">V1.2.0 <span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/BSD-3-Clause">BSD 3-Clause</a></td>
+<td style="text-align: left;"><a href="Drivers\BSP\X-NUCLEO-S2868A1\Release_Notes.html">release note</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>X-NUCLEO-IDS01Ax</strong></td>
+<td style="text-align: left;">V1.1.0 <span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/BSD-3-Clause">BSD 3-Clause</a></td>
+<td style="text-align: left;"><a href="Drivers\BSP\X-NUCLEO-IDS01Ax\Release_Notes.html">release note</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>S2LP</strong></td>
+<td style="text-align: left;">V1.2.0 <span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/BSD-3-Clause">BSD 3-Clause</a></td>
+<td style="text-align: left;"><a href="Drivers\BSP\Components\S2LP\Release_Notes.html">release note</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>SPIRIT1</strong></td>
+<td style="text-align: left;">V3.2.5 <span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/BSD-3-Clause">BSD 3-Clause</a></td>
+<td style="text-align: left;"><a href="Drivers\BSP\Components\spirit1\Release_Notes.html">release note</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>STM32F4xx CMSIS</strong></td>
+<td style="text-align: left;">V2.6.2</td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/BSD-3-Clause">BSD 3-Clause</a></td>
+<td style="text-align: left;"><a href="Drivers\CMSIS\Device\ST\STM32F4xx\Release_Notes.html">release note</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>STM32F4xx HAL</strong></td>
+<td style="text-align: left;">V1.7.4</td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/BSD-3-Clause">BSD 3-Clause</a></td>
+<td style="text-align: left;"><a href="Drivers\STM32F4xx_HAL_Driver\Release_Notes.html">release note</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>BSP STM32F4xx_NUCLEO</strong></td>
+<td style="text-align: left;">V1.2.7</td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/BSD-3-Clause">BSD 3-Clause</a></td>
+<td style="text-align: left;"><a href="Drivers\BSP\STM32F4xx-Nucleo\Release_Notes.html">release note</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>STM32L0xx CMSIS</strong></td>
+<td style="text-align: left;">V1.7.2</td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/BSD-3-Clause">BSD 3-Clause</a></td>
+<td style="text-align: left;"><a href="Drivers\CMSIS\Device\ST\STM32L0xx\Release_Notes.html">release note</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>STM32L0xx HAL</strong></td>
+<td style="text-align: left;">V1.8.2</td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/BSD-3-Clause">BSD 3-Clause</a></td>
+<td style="text-align: left;"><a href="Drivers\STM32L0xx_HAL_Driver\Release_Notes.html">release note</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>BSP STM32L0xx_NUCLEO</strong></td>
+<td style="text-align: left;">V2.1.1</td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/BSD-3-Clause">BSD 3-Clause</a></td>
+<td style="text-align: left;"><a href="Drivers\BSP\STM32L0xx_Nucleo\Release_Notes.html">release note</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>STM32L1xx CMSIS</strong></td>
+<td style="text-align: left;">V2.2.3</td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/BSD-3-Clause">BSD 3-Clause</a></td>
+<td style="text-align: left;"><a href="Drivers\CMSIS\Device\ST\STM32L1xx\Release_Notes.html">release note</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>STM32L1xx HAL</strong></td>
+<td style="text-align: left;">V1.3.1</td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/BSD-3-Clause">BSD 3-Clause</a></td>
+<td style="text-align: left;"><a href="Drivers\STM32L1xx_HAL_Driver\Release_Notes.html">release note</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>BSP STM32L1xx_NUCLEO</strong></td>
+<td style="text-align: left;">V1.1.2</td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/BSD-3-Clause">BSD 3-Clause</a></td>
+<td style="text-align: left;"><a href="Drivers\BSP\STM32L1xx_Nucleo\Release_Notes.html">release note</a></td>
+</tr>
+</tbody>
+</table>
+<p>Middlewares</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Version</th>
+<th style="text-align: left;">License</th>
+<th style="text-align: left;">Release note</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Contiki_STM32_Library</strong></td>
+<td style="text-align: left;">V1.3.0 <span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="http://www.st.com/SLA0055">SLA0055</a></td>
+<td style="text-align: left;"><a href="Middlewares\ST\Contiki_STM32_Library\Release_Notes.html">release note</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Contiki6LP Middleware for STM32Cube</strong></td>
+<td style="text-align: left;">V1.5.0 <span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/BSD-3-Clause">BSD 3-Clause</a></td>
+<td style="text-align: left;"><a href="Middlewares\Third_Party\Contiki\LICENSE">CONTIKI LICENSE</a> / <a href="Middlewares\Third_Party\Contiki\Contiki6LP_Release_Notes.html">Contiki6LP MW release notes</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>STM32 wM-Bus Library</strong></td>
+<td style="text-align: left;">V2.5.1 <span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="http://www.st.com/software_license_agreement_image_v2">SLA0047</a></td>
+<td style="text-align: left;"><a href="Middlewares/ST/WMBUS_Library_2013/Release_Notes.html">release notes</a></td>
+</tr>
+</tbody>
+</table>
+<p>Documentation</p>
+<ul>
+<li><a href="Documentation\Contiki6LP.chm">Doxygen documentation for Contiki6LP</a></li>
+<li><a href="Documentation\P2P_Firmware_Demo.chm">Doxygen documentation for P2P Demo</a></li>
+<li><a href="Documentation\wM-Bus_Library2013.chm">Doxygen documentation for wM-Bus 2013</a></li>
+<li><a href="Documentation\X-NUCLEO-IDS01Ax_BSP.chm">Doxygen documentation for X-NUCLEO-IDS01Ax BSP</a></li>
+<li><a href="Documentation\X-NUCLEO-S2868A1_BSP.chm">Doxygen documentation for X-NUCLEO-S2868A1 BSP</a></li>
+</ul>
+<h2 id="known-limitations">Known Limitations</h2>
+<ul>
+<li>Several compilation warnings are coming from Contiki files that have not been modified, these warings do not affect the fuinctionality of the firmware.</li>
+</ul>
+<h2 id="development-toolchains-and-compilers">Development Toolchains and Compilers</h2>
+<ul>
+<li>IAR System Workbench v8.50.9</li>
+<li>ARM Keil v5.32</li>
+<li>STM32CubeIDE v1.6.1</li>
+</ul>
+<h2 id="supported-devices-and-boards">Supported Devices and Boards</h2>
+<ul>
+<li>STM32F401RE, STM32L152RE and STM32L053R8 devices</li>
+<li>X-NUCLEO-S2868A1, X-NUCLEO-S2868A2, X-NUCLEO-S2915A1</li>
+<li>X-NUCLEO-IDS01A4, X-NUCLEO-IDS01A5</li>
+<li>NUCLEO-F401RE Board RevC</li>
+<li>NUCLEO-L152RE Board RevC</li>
+<li>NUCLEO-L053R8 Board RevC</li>
+</ul>
+</div>
+</div>
+<div class="collapse">
+<input type="checkbox" id="collapse-section0"  aria-hidden="true"> <label for="collapse-section0" aria-hidden="true"><strong>3.2.0 / December 16th 2019</strong></label>
+<div>
+<h2 id="main-changes-1">Main Changes</h2>
+<ul>
+<li>Added support for X-NUCLEO-S2915A1</li>
+<li>The package automatically supports the new expansion board X-NUCLEO-S2868A2 that is pin to pin compatible with X-NUCLEO-S2868A1</li>
+</ul>
+<h2 id="contents-1">Contents</h2>
+<ul>
+<li>STM32Cube HAL and Middlewares drivers
+<ul>
+<li>STM32F4xx drivers aligned to STM32CubeF4 V1.21.0</li>
+<li>STM32L1xx drivers aligned to STM32CubeL1 V1.8.1</li>
+<li>STM32L0xx drivers aligned to STM32CubeL0 V1.10.0</li>
+</ul></li>
+<li>Documentation
+<ul>
+<li>Doxygen documentation for Contiki6LP</li>
+<li>Doxygen documentation for P2P Demo</li>
+<li>Doxygen documentation for wM-Bus 2013</li>
+<li>Doxygen documentation for X-NUCLEO-IDS01Ax_BSP</li>
+</ul></li>
+<li>Drivers
+<ul>
+<li>BSP X-NUCLEO-S2868A1 V1.1.0</li>
+<li>BSP X-NUCLEO-IDS01Ax V1.0.0</li>
+</ul></li>
+<li>Middlewares
+<ul>
+<li>STM32 wM-Bus Library V2.5.0</li>
+<li>Contiki6LP Middleware for STM32Cube V1.4.0</li>
+<li>Contiki_STM32_Library V1.2.0</li>
+</ul></li>
+</ul>
+<h2 id="development-toolchains-and-compilers-1">Development Toolchains and Compilers</h2>
+<ul>
+<li>IAR Embedded Workbench for ARM (EWARM) toolchain V8.32 + ST-Link</li>
+<li>RealView Microcontroller Development Kit (MDK-ARM) toolchain V5.27 + ST-LINK</li>
+<li>System Workbench for STM32 (SW4STM32) toolchain v1.16.0 (IDE 2.5.0) + ST-Link</li>
+</ul>
+<h2 id="supported-devices-and-eval-boards">Supported Devices and EVAL boards</h2>
+<ul>
+<li>STM32F401RE, STM32L152RE and STM32L053R8 devices</li>
+<li>X-NUCLEO-S2868A1, X-NUCLEO-S2868A2, X-NUCLEO-S2915A1</li>
+<li>X-NUCLEO-IDS01A4, X-NUCLEO-IDS01A5</li>
+<li>NUCLEO-F401RE Board RevC</li>
+<li>NUCLEO-L152RE Board RevC</li>
+<li>NUCLEO-L053R8 Board RevC</li>
+</ul>
+</div>
+</div>
+<div class="collapse">
+<input type="checkbox" id="collapse-section0"  aria-hidden="true"> <label for="collapse-section0" aria-hidden="true"><strong>3.1.1 / June 1st 2019</strong></label>
+<div>
+<h2 id="main-changes-2">Main Changes</h2>
+<ul>
+<li>Fixed radio driver that caused a problem to Border Router for NUCLEO-F401RE platform.</li>
+<li>Modified TIM implementation for rtimer-arch.</li>
+<li>Modified heap/stack memory sizes.</li>
+<li>UDP Client sends RPL parent in the message</li>
+</ul>
+<h2 id="contents-2">Contents</h2>
+<ul>
+<li>STM32Cube HAL and Middlewares drivers
+<ul>
+<li>STM32F4xx drivers aligned to STM32CubeF4 V1.21.0</li>
+<li>STM32L1xx drivers aligned to STM32CubeL1 V1.8.1</li>
+<li>STM32L0xx drivers aligned to STM32CubeL0 V1.10.0</li>
+</ul></li>
+<li>Documentation
+<ul>
+<li>Doxygen documentation for Contiki6LP</li>
+<li>Doxygen documentation for P2P Demo</li>
+<li>Doxygen documentation for wM-Bus 2013</li>
+<li>Doxygen documentation for X-NUCLEO-IDS01Ax_BSP</li>
+</ul></li>
+<li>Drivers
+<ul>
+<li>BSP X-NUCLEO-S2868A1 V1.0.0</li>
+<li>BSP X-NUCLEO-IDS01Ax V1.0.0</li>
+</ul></li>
+<li>Middlewares
+<ul>
+<li>STM32 wM-Bus Library V2.5.0</li>
+<li>Contiki6LP Middleware for STM32Cube V1.4.0</li>
+<li>Contiki_STM32_Library V1.1.1</li>
+</ul></li>
+</ul>
+<h2 id="development-toolchains-and-compilers-2">Development Toolchains and Compilers</h2>
+<ul>
+<li>IAR Embedded Workbench for ARM (EWARM) toolchain V8.20.2 + ST-Link</li>
+<li>RealView Microcontroller Development Kit (MDK-ARM) toolchain V5.24.2 + ST-LINK</li>
+<li>System Workbench for STM32 (SW4STM32) toolchain v1.16.0 (IDE 2.5.0) + ST-Link</li>
+</ul>
+<h2 id="supported-devices-and-eval-boards-1">Supported Devices and EVAL boards</h2>
+<ul>
+<li>STM32F401RE, STM32L152RE and STM32L053R8 devices</li>
+<li>X-NUCLEO-S2868A1, X-NUCLEO-IDS01A4, X-NUCLEO-IDS01A5</li>
+<li>NUCLEO-F401RE Board RevC</li>
+<li>NUCLEO-L152RE Board RevC</li>
+<li>NUCLEO-L053R8 Board RevC</li>
+</ul>
+</div>
+</div>
+<div class="collapse">
+<input type="checkbox" id="collapse-section0"  aria-hidden="true"> <label for="collapse-section0" aria-hidden="true"><strong>3.1.0 / December 14th 2018</strong></label>
+<div>
+<h2 id="main-changes-3">Main Changes</h2>
+<ul>
+<li>Added support for Low Power (NUCLEO-L152RE and X-NUCLEO-S2868A1), demonstration available in Udp Sender and Udp Receiver applications.</li>
+</ul>
+<h2 id="contents-3">Contents</h2>
+<ul>
+<li>STM32Cube HAL and Middlewares drivers
+<ul>
+<li>STM32F4xx drivers aligned to STM32CubeF4 V1.21.0</li>
+<li>STM32L1xx drivers aligned to STM32CubeL1 V1.8.1</li>
+<li>STM32L0xx drivers aligned to STM32CubeL0 V1.10.0</li>
+</ul></li>
+<li>Documentation
+<ul>
+<li>Doxygen documentation for Contiki6LP</li>
+<li>Doxygen documentation for P2P Demo</li>
+<li>Doxygen documentation for wM-Bus 2013</li>
+<li>Doxygen documentation for X-NUCLEO-IDS01Ax_BSP</li>
+</ul></li>
+<li>Drivers
+<ul>
+<li>BSP X-NUCLEO-S2868A1 V1.0.0</li>
+<li>BSP X-NUCLEO-IDS01Ax V1.0.0</li>
+</ul></li>
+<li>Middlewares
+<ul>
+<li>STM32 wM-Bus Library V2.5.0</li>
+<li>Contiki6LP Middleware for STM32Cube V1.4.0</li>
+<li>Contiki_STM32_Library V1.1.0</li>
+</ul></li>
+</ul>
+<h2 id="development-toolchains-and-compilers-3">Development Toolchains and Compilers</h2>
+<ul>
+<li>IAR Embedded Workbench for ARM (EWARM) toolchain V8.20.2 + ST-Link</li>
+<li>RealView Microcontroller Development Kit (MDK-ARM) toolchain V5.24.2 + ST-LINK</li>
+<li>System Workbench for STM32 (SW4STM32) toolchain v1.16.0 (IDE 2.5.0) + ST-Link</li>
+</ul>
+<h2 id="supported-devices-and-eval-boards-2">Supported Devices and EVAL boards</h2>
+<ul>
+<li>STM32F401RE, STM32L152RE and STM32L053R8 devices</li>
+<li>X-NUCLEO-S2868A1, X-NUCLEO-S2915A1, X-NUCLEO-IDS01A4, X-NUCLEO-IDS01A5</li>
+<li>NUCLEO-F401RE Board RevC</li>
+<li>NUCLEO-L152RE Board RevC</li>
+<li>NUCLEO-L053R8 Board RevC</li>
+</ul>
+</div>
+</div>
+<div class="collapse">
+<input type="checkbox" id="collapse-section0"  aria-hidden="true"> <label for="collapse-section0" aria-hidden="true"><strong>3.0.0 / June 1st 2018</strong></label>
+<div>
+<h2 id="main-changes-4">Main Changes</h2>
+<ul>
+<li>Added support of S2-LP expansion board.</li>
+<li>Application: Serial Sniffer - integrated in 6LoWPAN</li>
+<li>Update on STM32Cube HAL driver</li>
+<li>Update of Middlewares</li>
+</ul>
+<h2 id="contents-4">Contents</h2>
+<ul>
+<li>STM32Cube HAL and Middlewares drivers
+<ul>
+<li>STM32F4xx drivers aligned to STM32CubeF4 V1.21.0</li>
+<li>STM32L1xx drivers aligned to STM32CubeL1 V1.8.1</li>
+<li>STM32L0xx drivers aligned to STM32CubeL0 V1.10.0</li>
+</ul></li>
+<li>Documentation
+<ul>
+<li>Doxygen documentation for Contiki6LP</li>
+<li>Doxygen documentation for P2P Demo</li>
+<li>Doxygen documentation for wM-Bus 2013</li>
+<li>Doxygen documentation for X-NUCLEO-IDS01Ax_BSP</li>
+</ul></li>
+<li>Drivers
+<ul>
+<li>BSP X-NUCLEO-S2868A1 V1.0.0</li>
+<li>BSP X-NUCLEO-IDS01Ax V1.0.0</li>
+</ul></li>
+<li>Middlewares
+<ul>
+<li>STM32 wM-Bus Library V2.4.2</li>
+<li>Contiki6LP Middleware for STM32Cube</li>
+</ul></li>
+</ul>
+<h2 id="development-toolchains-and-compilers-4">Development Toolchains and Compilers</h2>
+<ul>
+<li>IAR Embedded Workbench for ARM (EWARM) toolchain V8.11.3 + ST-Link</li>
+<li>RealView Microcontroller Development Kit (MDK-ARM) toolchain V5.23 + ST-LINK</li>
+<li>System Workbench for STM32 (SW4STM32) v2.0+ ST-Link</li>
+</ul>
+<h2 id="supported-devices-and-eval-boards-3">Supported Devices and EVAL boards</h2>
+<ul>
+<li>STM32F401RE, STM32L152RE and STM32L053R8 devices</li>
+<li>X-NUCLEO-S2868A1, X-NUCLEO-IDS01A4, X-NUCLEO-IDS01A5</li>
+<li>NUCLEO-F401RE Board RevC</li>
+<li>NUCLEO-L152RE Board RevC</li>
+<li>NUCLEO-L053R8 Board RevC</li>
+</ul>
+</div>
+</div>
+<div class="collapse">
+<input type="checkbox" id="collapse-section0"  aria-hidden="true"> <label for="collapse-section0" aria-hidden="true"><strong>2.0.0 / May 15th 2017</strong></label>
+<div>
+<h2 id="main-changes-5">Main Changes</h2>
+<ul>
+<li>Contiki/6LoWPAN integrated in Middleware</li>
+<li>Update on STM32Cube HAL driver</li>
+<li>Minor updates in Point-to-Point demo application files</li>
+</ul>
+<h2 id="contents-5">Contents</h2>
+<ul>
+<li>STM32Cube HAL and Middlewares drivers
+<ul>
+<li>STM32F4xx drivers aligned to STM32CubeF4 V1.16.0</li>
+<li>STM32L1xx drivers aligned to STM32CubeL1 V1.7.0</li>
+<li>STM32L0xx drivers aligned to STM32CubeL0 V1.9.0</li>
+</ul></li>
+<li>Documentation
+<ul>
+<li>Doxygen documentation for P2P Demo</li>
+<li>Doxygen documentation for wM-Bus 2013</li>
+</ul></li>
+<li>Drivers
+<ul>
+<li>BSP X-NUCLEO-IDS01Ax V1.0.0</li>
+</ul></li>
+<li>Middlewares
+<ul>
+<li>STM32 wM-Bus Library V2.4.2</li>
+<li>Contiki6LP Middleware for STM32Cube</li>
+</ul></li>
+</ul>
+<h2 id="development-toolchains-and-compilers-5">Development Toolchains and Compilers</h2>
+<ul>
+<li>IAR Embedded Workbench for ARM (EWARM) toolchain V7.80.2 + ST-Link</li>
+<li>RealView Microcontroller Development Kit (MDK-ARM) toolchain V5.23 + ST-LINK</li>
+<li>System Workbench for STM32 (SW4STM32) v2.0+ ST-Link</li>
+</ul>
+<h2 id="supported-devices-and-eval-boards-4">Supported Devices and EVAL boards</h2>
+<ul>
+<li>STM32F401RE, STM32L152RE and STM32L053R8 devices</li>
+<li>X-NUCLEO-IDS01A4, X-NUCLEO-IDS01A5</li>
+<li>NUCLEO-F401RE Board RevC</li>
+<li>NUCLEO-L152RE Board RevC</li>
+<li>NUCLEO-L053R8 Board RevC</li>
+</ul>
+</div>
+</div>
+<div class="collapse">
+<input type="checkbox" id="collapse-section0"  aria-hidden="true"> <label for="collapse-section0" aria-hidden="true"><strong>1.2.0 / September 14th 2016</strong></label>
+<div>
+<h2 id="main-changes-6">Main Changes</h2>
+<ul>
+<li>Update on STM32Cube HAL driver</li>
+<li>Updated SPIRIT1 Library compliant to SPIRIT1-DK STSW-CONNECT009 V2.2.1</li>
+<li>Updated wM-Bus Library compliant to wM-Bus 2013 standard</li>
+</ul>
+<h2 id="contents-6">Contents</h2>
+<ul>
+<li>STM32Cube HAL and Middlewares drivers
+<ul>
+<li>STM32F4xx drivers aligned to STM32CubeF4 V1.13.1</li>
+<li>STM32L1xx drivers aligned to STM32CubeL1 V1.6.0</li>
+<li>STM32L0xx drivers aligned to STM32CubeL0 V1.7.0</li>
+</ul></li>
+<li>Documentation
+<ul>
+<li>Doxygen documentation for P2P Demo</li>
+<li>Doxygen documentation for wM-Bus 2013</li>
+</ul></li>
+<li>Drivers
+<ul>
+<li>BSP X-NUCLEO-IDS01Ax V1.0.0</li>
+</ul></li>
+<li>Middlewares
+<ul>
+<li>STM32 wM-Bus Library V2.4.2</li>
+</ul></li>
+</ul>
+<h2 id="known-limitations-1">Known Limitations</h2>
+<p>WARNING: SPI peripheral can go in timeout for F4 MCU families, due to a bug in the HAL_SPI_TransmitReceive() function In case of problems, you can call the __HAL_SPI_CLEAR_OVRFLAG() macro to clear the overrun flag before using the HAL_SPI_TransmitReceive() function.</p>
+<h2 id="development-toolchains-and-compilers-6">Development Toolchains and Compilers</h2>
+<ul>
+<li>IAR Embedded Workbench for ARM (EWARM) toolchain V7.60.1 + ST-Link</li>
+<li>RealView Microcontroller Development Kit (MDK-ARM) toolchain V5.17 + ST-LINK</li>
+<li>System Workbench for STM32 (SW4STM32) v1.7+ ST-Link</li>
+</ul>
+<h2 id="supported-devices-and-eval-boards-5">Supported Devices and EVAL boards</h2>
+<ul>
+<li>STM32F401RE, STM32L152RE and STM32L053R8 devices</li>
+<li>X-NUCLEO-IDS01A4, X-NUCLEO-IDS01A5</li>
+<li>NUCLEO-F401RE Board RevC</li>
+<li>NUCLEO-L152RE Board RevC</li>
+<li>NUCLEO-L053R8 Board RevC</li>
+</ul>
+</div>
+</div>
+<div class="collapse">
+<input type="checkbox" id="collapse-section0"  aria-hidden="true"> <label for="collapse-section0" aria-hidden="true"><strong>1.1.1 / April 4th 2016</strong></label>
+<div>
+<h2 id="main-changes-7">Main Changes</h2>
+<ul>
+<li>STM32L1xx Support added</li>
+<li>Update on STM32Cube HAL driver</li>
+<li>Updated SPIRIT1 Library compliant to SPIRIT1 DK_2.1.0</li>
+</ul>
+<h2 id="contents-7">Contents</h2>
+<ul>
+<li>STM32Cube HAL and Middlewares drivers
+<ul>
+<li>STM32F4xx drivers aligned to STM32CubeF4 V1.11.0</li>
+<li>STM32L1xx drivers aligned to STM32CubeL1 V1.5.0</li>
+<li>STM32L0xx drivers aligned to STM32CubeL0 V1.5.0</li>
+</ul></li>
+<li>Documentation
+<ul>
+<li>Doxygen documentation for P2P Demo</li>
+<li>Doxygen documentation for wM-Bus</li>
+</ul></li>
+<li>Drivers
+<ul>
+<li>BSP X-NUCLEO-IDS01Ax V1.0.0</li>
+</ul></li>
+<li>Middlewares
+<ul>
+<li>STM32 wM-Bus Library V1.0.8</li>
+</ul></li>
+</ul>
+<h2 id="known-limitations-2">Known Limitations</h2>
+<p>WARNING: SPI peripheral can go in timeout for F4 MCU families, due to a bug in the HAL_SPI_TransmitReceive() function In case of problems, you can call the __HAL_SPI_CLEAR_OVRFLAG() macro to clear the overrun flag before using the HAL_SPI_TransmitReceive() function.</p>
+<h2 id="development-toolchains-and-compilers-7">Development Toolchains and Compilers</h2>
+<ul>
+<li>IAR Embedded Workbench for ARM (EWARM) toolchain V7.50.2 + ST-Link</li>
+<li>RealView Microcontroller Development Kit (MDK-ARM) toolchain V5.17 + ST-LINK</li>
+<li>System Workbench for STM32 (SW4STM32) v1.7+ ST-Link</li>
+</ul>
+<h2 id="supported-devices-and-eval-boards-6">Supported Devices and EVAL boards</h2>
+<ul>
+<li>STM32F401RE, STM32L152RE and STM32L053R8 devices</li>
+<li>X-NUCLEO-IDS01A4, X-NUCLEO-IDS01A5</li>
+<li>NUCLEO-F401RE Board RevC</li>
+<li>NUCLEO-L152RE Board RevC</li>
+<li>NUCLEO-L053R8 Board RevC</li>
+</ul>
+</div>
+</div>
+<div class="collapse">
+<input type="checkbox" id="collapse-section0"  aria-hidden="true"> <label for="collapse-section0" aria-hidden="true"><strong>1.0.0 / April 10th 2015</strong></label>
+<div>
+<h2 id="main-changes-8">Main Changes</h2>
+<ul>
+<li>First official release of firmware for X-NUCLEO-IDS01Ax(x=4,5) Expansion Board</li>
+</ul>
+<h2 id="contents-8">Contents</h2>
+<ul>
+<li>Drivers
+<ul>
+<li>Cortex-M CMSIS V3.20</li>
+<li>STM32F4xx CMSIS V2.2.0</li>
+<li>STM32F4xx HAL V1.2.0</li>
+<li>STM32L0xx HAL V1.0.0</li>
+<li>STM32L0xx CMSIS V1.0.1</li>
+<li>BSP STM32F4xx_NUCLEO V1.2.0</li>
+<li>STM32L0xx HAL V1.0.0</li>
+<li>BSP STM32L0xx_NUCLEO V1.0.0</li>
+<li>BSP X-NUCLEO-IDS01Ax V1.0.0</li>
+<li>BSP SPIRIT1 V3.0.1</li>
+</ul></li>
+<li>Middlewares
+<ul>
+<li>STM32 wM-Bus Library V1.0.8</li>
+</ul></li>
+</ul>
+<h2 id="development-toolchains-and-compilers-8">Development Toolchains and Compilers</h2>
+<ul>
+<li>IAR Embedded Workbench for ARM (EWARM) toolchain V7.20 + ST-Link</li>
+<li>RealView Microcontroller Development Kit (MDK-ARM) toolchain V5.12 + ST-LINK</li>
+<li>System Workbench for STM32 (SW4STM32)+ ST-Link</li>
+</ul>
+<h2 id="supported-devices-and-eval-boards-7">Supported Devices and EVAL boards</h2>
+<ul>
+<li>STM32F401RE and STM32L053R8 devices</li>
+<li>X-NUCLEO-IDS01A4, X-NUCLEO-IDS01A5</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<footer class="sticky">
+<div class="columns">
+<div class="column" style="width:95%;">
+<p>For complete documentation on <strong>X-CUBE-SUBG1</strong> , visit: <span style="background-color: yellow;"><a href="https://www.st.com/en/embedded-software/x-cube-subg1.html">X-CUBE-SUBG1</a></span></p>
+</div><div class="column" style="width:5%;">
+
+</div>
+</div>
+</footer>
+</body>
+</html>

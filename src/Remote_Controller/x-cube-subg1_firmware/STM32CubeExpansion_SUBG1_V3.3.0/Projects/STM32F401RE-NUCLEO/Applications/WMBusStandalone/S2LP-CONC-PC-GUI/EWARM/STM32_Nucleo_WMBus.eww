@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspace>
+    <project>
+        <path>$WS_DIR$\STM32_Nucleo_WMBus.ewp</path>
+    </project>
+    <batchBuild>
+        <batchDefinition>
+            <name>wMBus_NUCLEO_F4</name>
+            <member>
+                <project>STM32_Nucleo_WMBus</project>
+                <configuration>S2LP-CONC-PC-GUI</configuration>
+            </member>
+        </batchDefinition>
+    </batchBuild>
+</workspace>

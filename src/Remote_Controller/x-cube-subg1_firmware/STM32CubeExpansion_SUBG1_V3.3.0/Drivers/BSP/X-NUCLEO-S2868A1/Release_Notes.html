@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Release Notes for S2868Ax/S2915A1 BSP</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" href="_htmresc/mini-st_2020.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <link rel="icon" type="image/x-icon" href="_htmresc/favicon.png" />
+</head>
+<body>
+<div class="row">
+<div class="col-sm-12 col-lg-4">
+<center>
+<h1 id="release-notes-for-s2868axs2915a1-bsp">Release Notes for <mark>S2868Ax/S2915A1 BSP</mark></h1>
+<p>Copyright © <span style="background-color: yellow;">2021</span> STMicroelectronics<br />
+</p>
+<a href="https://www.st.com" class="logo"><img src="_htmresc/st_logo_2020.png" alt="ST logo" /></a>
+</center>
+<h1 id="license">License</h1>
+<p>This software component is licensed by ST under BSD 3-Clause, the “License”; You may not use this component except in compliance with the License. You may obtain a copy of the License at:</p>
+<p><a href="https://opensource.org/licenses/BSD-3-Clause"><span style="background-color: yellow;">BSD 3-Clause</span></a></p>
+<h1 id="purpose">Purpose</h1>
+<p>The S2868Ax/S2915A1 BSP is a SW component for the STM32Cube.</p>
+<p>Here is the list of references to user documents:</p>
+<ul>
+<li><a href="https://www.st.com/resource/en/datasheet/s2-lp.pdf">DS11896 Ultra-low power, high performance, sub-1GHz transceiver</a></li>
+<li><a href="https://www.st.com/resource/en/user_manual/dm00498153.pdf">UM2405 Getting started with the X-NUCLEO-S2868A1 Sub-1 GHz 868 MHz RF expansion board based on S2-LP radio for STM32 Nucleo</a></li>
+<li><a href="https://www.st.com/resource/en/schematic_pack/x-nucleo-s2868a1_schematic.pdf">X-NUCLEO-S2868A1 SCHEMATIC</a></li>
+<li><a href="https://www.st.com/resource/en/schematic_pack/x-nucleo-s2868a2_schematic.pdf">X-NUCLEO-S2868A2 SCHEMATIC</a></li>
+<li><a href="https://www.st.com/resource/en/schematic_pack/x-nucleo-s2915a1_schematic.pdf">X-NUCLEO-S915A1 SCHEMATIC</a></li>
+</ul>
+</div>
+<div class="col-sm-12 col-lg-8">
+<h1 id="update-history">Update History</h1>
+<div class="collapse">
+<input type="checkbox" id="collapse-section2"  aria-hidden="true"> <label for="collapse-section2" aria-hidden="true"><strong>1.2.0 / April 14th 2021</strong></label>
+<div>
+<h2 id="main-changes">Main Changes</h2>
+<h3 id="maintenance-release">Maintenance release</h3>
+<table>
+<caption>Additional features</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Headline</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Added irq disable cnt semaphore</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Fixed a warning in radio_timer.c</td>
+</tr>
+</tbody>
+</table>
+<h2 id="contents">Contents</h2>
+<table>
+<caption>Components</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Version</th>
+<th style="text-align: left;">License</th>
+<th style="text-align: left;">Release note</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>S2xxxAy BSP</strong></td>
+<td style="text-align: left;">V1.2.0</td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/BSD-3-Clause">[BSD 3-Clause]</a></td>
+<td style="text-align: left;"><a href=".\Release_Notes.html">release note</a></td>
+</tr>
+</tbody>
+</table>
+<p><br />
+</p>
+<p>Note: in the table above, components <strong>highlighted</strong> have changed since previous release.</p>
+<h2 id="known-limitations">Known Limitations</h2>
+<table>
+<caption>Requirements not met or planned in a forthcoming release</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Headline</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">No known limitations</td>
+</tr>
+</tbody>
+</table>
+<p><br />
+</p>
+<h2 id="supported-devices-and-boards">Supported Devices and Boards</h2>
+<ul>
+<li>X-NUCLEO-S2868A1</li>
+<li>X-NUCLEO-S2868A2</li>
+<li>X-NUCLEO-S2915A1</li>
+</ul>
+<h2 id="backward-compatibility">Backward Compatibility</h2>
+<p>Backward compatible with previous release</p>
+<h2 id="dependencies">Dependencies</h2>
+</div>
+</div>
+<div class="collapse">
+<input type="checkbox" id="collapse-section1"  aria-hidden="true"> <label for="collapse-section1" aria-hidden="true"><strong>1.1.0 / Dec 16th 2019</strong></label>
+<div>
+<h2 id="main-changes-1">Main Changes</h2>
+<h3 id="maintenance-release-1">Maintenance release</h3>
+<table>
+<caption>Additional features</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Headline</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Integrated support for X-NUCLEO-S2915A1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">New expansion board X-NUCLEO-S2868A2 is automatically supported because pin to pin compatible with X-NUCLEO-S2868A1</td>
+</tr>
+</tbody>
+</table>
+<h2 id="contents-1">Contents</h2>
+<table>
+<caption>Components</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Version</th>
+<th style="text-align: left;">License</th>
+<th style="text-align: left;">Release note</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>S2xxxAy BSP</strong></td>
+<td style="text-align: left;">V1.1.0</td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/BSD-3-Clause">[BSD 3-Clause]</a></td>
+<td style="text-align: left;"><a href=".\Release_Notes.html">release note</a></td>
+</tr>
+</tbody>
+</table>
+<p><br />
+</p>
+<p>Note: in the table above, components <strong>highlighted</strong> have changed since previous release.</p>
+<h2 id="known-limitations-1">Known Limitations</h2>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Headline</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">No known limitations</td>
+</tr>
+</tbody>
+</table>
+<h2 id="supported-devices-and-boards-1">Supported Devices and Boards</h2>
+<ul>
+<li>X-NUCLEO-S2868A1</li>
+<li>X-NUCLEO-S2868A2</li>
+<li>X-NUCLEO-S2915A1</li>
+</ul>
+<h2 id="backward-compatibility-1">Backward Compatibility</h2>
+<p>Backward compatible with previous release</p>
+<h2 id="dependencies-1">Dependencies</h2>
+</div>
+</div>
+<div class="collapse">
+<input type="checkbox" id="collapse-section0"  aria-hidden="true"> <label for="collapse-section0" aria-hidden="true"><strong>1.0.0 / April 5th 2018</strong></label>
+<div>
+<h2 id="main-changes-2">Main Changes</h2>
+<h3 id="first-release">First Release</h3>
+<p>First release</p>
+<p>Headline ———————————————————-</p>
+<p>: Additional features</p>
+<h2 id="contents-2">Contents</h2>
+<table>
+<caption>Components</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Version</th>
+<th style="text-align: left;">License</th>
+<th style="text-align: left;">Release note</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>S2xxxAy BSP</strong></td>
+<td style="text-align: left;">V1.0.0</td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/BSD-3-Clause">[BSD 3-Clause]</a></td>
+<td style="text-align: left;"><a href=".\Release_Notes.html">release note</a></td>
+</tr>
+</tbody>
+</table>
+<p><br />
+</p>
+<p>Note: in the table above, components <strong>highlighted</strong> have changed since previous release.</p>
+<h2 id="known-limitations-2">Known Limitations</h2>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Headline</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">No known limitations</td>
+</tr>
+</tbody>
+</table>
+<h2 id="supported-devices-and-boards-2">Supported Devices and Boards</h2>
+<ul>
+<li>X-NUCLEO-S2868A1</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<footer class="sticky">
+<div class="columns">
+<div class="column" style="width:95%;">
+<p>For complete documentation on <strong>X-NUCLEO-S868A2</strong> , visit: [<a href="https://www.st.com/content/st_com/en/products/ecosystems/stm32-open-development-environment/stm32-nucleo-expansion-boards/stm32-ode-connect-hw/x-nucleo-s2868a2.html">S2868A2</a>]</p>
+<p>For complete documentation on <strong>X-NUCLEO-S915A1</strong> , visit: [<a href="https://www.st.com/content/st_com/en/products/ecosystems/stm32-open-development-environment/stm32-nucleo-expansion-boards/stm32-ode-connect-hw/x-nucleo-s2915a1.html">S2915A1</a>]</p>
+</div><div class="column" style="width:5%;">
+
+</div>
+</div>
+</footer>
+</body>
+</html>
